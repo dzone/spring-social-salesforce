@@ -1,6 +1,6 @@
 package org.springframework.social.salesforce.api;
 
-import org.codehaus.jackson.JsonNode;
+import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.social.ApiBinding;
 
 import java.util.List;
@@ -11,6 +11,8 @@ import java.util.List;
  * @author Umut Utkan
  */
 public interface Salesforce extends ApiBinding {
+
+    public static final String PROVIDER_ID = "salesforce";
 
     public ApiOperations apiOperations();
 

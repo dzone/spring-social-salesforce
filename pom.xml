@@ -15,9 +15,10 @@
 
     <slf4j.version>1.6.4</slf4j.version>
     <logback.version>0.9.29</logback.version>
-    <spring-social.version>1.1.0.M1</spring-social.version>
+    <spring-social.version>1.1.0.M3</spring-social.version>
     <spring-social-test.version>1.0.2.RELEASE</spring-social-test.version>
-    <jackson.version>1.8.5</jackson.version>
+    <jackson.version>1.9.3</jackson.version>
+    <jackson2.version>2.2.0</jackson2.version>
     <junit.version>4.10</junit.version>
     <mockito.version>1.9.0</mockito.version>
     <commons-lang3.version>3.1</commons-lang3.version>
@@ -40,6 +41,16 @@
       <artifactId>jackson-mapper-asl</artifactId>
       <version>${jackson.version}</version>
     </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+          <version>${jackson2.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>${jackson2.version}</version>
+      </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
@@ -73,6 +84,11 @@
       <version>${mockito.version}</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.codehaus.jackson</groupId>
+          <artifactId>jackson-mapper-asl</artifactId>
+          <version>1.9.2</version>
+      </dependency>
   </dependencies>
 
   <build>
